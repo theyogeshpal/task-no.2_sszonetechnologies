@@ -1,0 +1,416 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .navbar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    top: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .destiny {
+    font-size: 2.5vmin;
+  }
+  
+  .name {
+    font-size: 4vmin;
+    margin-right: 0vmin;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .bar button {
+    font-size: 5vmin;
+    width: 10vmin;
+    margin: 2vmin;
+    background-color:transparent;
+    cursor: pointer;
+    border: none;
+  }
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1vmin solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 5vmin;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    font-size: 3vmin;
+    height: 90vh;
+    width: 30vw;
+    z-index: +2;
+  }
+  
+  .overlay ul li{
+    margin: 5vmin;
+    list-style: none;
+  }
+  
+  .overlay ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  .hide {
+    display: none;
+  }
+  
+  .heroimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vmin;
+    height: 80vh;
+    width: 100vw;
+    object-fit: fill;
+    overflow: hidden;
+    
+  }
+  
+  .heroimg img {
+    object-fit: fill;
+    height: 70vh;
+    width: 95vw;
+    z-index: 0;
+  }
+  
+  .heroimg p {
+    position: absolute;
+    top: 30vmin;
+    font-size: 5vmin;
+    color: rgb(0, 0, 0);
+    z-index: 2;
+  }
+  
+  .whitespace img{
+    position: absolute;
+    left: 40vmin;
+    top: 28vmin;
+    height: 20vmin;
+    width: 150vmin;
+  }
+  #type {
+    position: absolute;
+    z-index: 2;
+    font-size: 5vmin;
+    color: rgb(255, 75, 75);
+  }
+  
+  
+  .central {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5vmin;
+  }
+  
+  .central button{
+    background-color: rgb(255, 255, 255);
+    border: 0.2vmin solid transparent;
+    box-sizing: border-box;
+    height: 30vmin;
+    width: 25vmin;
+    gap: 2vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+  }
+  
+  .central button:hover {
+    border: 0.2vmin solid black;
+    box-sizing: border-box;
+  }
+  
+  .central img {
+    object-fit: fill;
+    height: 10vmin;
+    background-color: transparent;
+  }
+  .category:hover {
+    transform: translateY(-2vmin);
+    transition: 1s;
+  }
+  
+  .central p {
+    font-size: 1.7vmin;
+    color: rgb(107, 107, 107);
+  }
+  .destinations {
+    margin: 2vmin;
+  }
+  
+  .destinations h1,h5 {
+    text-align: center;
+  }
+  .destination-options {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 2vmin;
+    justify-content: space-around;
+    margin: 5vmin 7vmin 5vmin 7vmin;
+    
+  }
+  .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vmin;
+    width: 43vmin;
+    border: 0.2vmin solid transparent;
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+    font-size: 4vmin;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .div:hover {
+    border: 0.2vmin solid black;
+  }
+  .statepic {
+    height: 40vmin;
+    width: 45vmin;
+    object-fit: cover;
+  }
+  .statepic:hover {
+    transform: scale(1.04);
+    transition-duration: 1s;
+  }
+  .image {
+    display: flex;
+    background-color: blue;
+    height: 40vmin;
+    width: 45vmin;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .map {
+    height: 40vmin;
+    width: 40vmin;
+    margin: 2vmin;
+  }
+  .explore {
+    font-size: 2.5vmin;
+    background-color: transparent;
+    border: 0.2vmin solid rgb(141, 141, 141);
+    width: 20vmin;
+    height: 8vmin;
+    margin: 2vmin;
+  }
+  .explore:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+  }
+  .review-container {
+    background-color: rgb(220, 220, 220);
+    margin: 5vmin;
+    padding: 2vmin;
+  }
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 4vmin;
+    margin: 2vmin;
+    padding: 2vmin;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .review-detail{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-shadow: 5px 2px 2px rgb(3, 3, 3);
+    border: 0.2vmin solid rgb(132, 129, 129);
+    width: 88vmin;
+  }
+  .review-detail:hover {
+    box-shadow: 10px 5px 5px rgb(3, 3, 3);
+    border: 0.2vmin solid rgb(255, 0, 0);
+    background-color: rgb(255, 255, 123);
+  }
+  
+  .review-detail img{
+    border-radius: 80%;
+    height: 5vmin;
+    width: 5vmin;
+    margin: 1vmin;
+  }
+  .review-detail h5 {
+    margin-top: 2vmin;
+    margin-right: 2vmin;
+    
+  }
+  .Username {
+    justify-content: flex-start;
+    display: flex;
+    margin: 1vmin;
+    height: 7vmin;
+  }
+  .review-text {
+    text-align: center;
+    padding: 2vmin;
+  }
+  
+  .fa {
+    margin-top: 2vmin;
+    text-align: end;
+  }
+  .checked {
+    color: orange;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5vmin;
+    justify-content: center;
+   
+  }
+  .worldmap img {
+    margin-top: 2vmin;
+    height: 38vmin;
+  }
+  
+  .hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+      /* use the linear-gradient for the fading effect*/
+      /* use a solid background color for a solid bar*/
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      /* this is really the only tricky part, you need to specify the background color of the container element...*/
+      color: #000000;
+      background-color: white;
+    }
+  }
+  .socialmedia {
+    margin-top: 5vmin;
+    width: 50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+  }
+  .socialmedia i {
+    font-size: 7vmin;
+  }
+  .socialicon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vmin;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vmin 10vmin 10vmin;
+    gap: 5vmin;
+  }
+  .newsletter input {
+    height: 6vmin;
+    width: 48vmin;
+    padding: 1vmin;
+    margin-top: 3vmin;
+    border: 0.2vmin solid rgb(84, 84, 84);
+    transition-duration: 1s;
+  }
+  .newsletter input::placeholder {
+    text-align: center;
+    
+  }
+  .newsletter button {
+    height: 8vmin;
+    width: 50vmin;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 0.2vmin solid black;
+    font-size: 3.5vmin;
+  }
+  .newsletter button:hover {
+   background-color: #262626;
+  }
+  @media screen and (max-width: 450px) {
+    .central {
+      display: flex;
+      flex-direction: row; 
+      justify-content: center;
+      align-items: center;
+    }
+    .central button {
+      margin: 0 20vmin 0 20vmin;
+      height: 60vmin;
+      width: 50vmin;
+      font-size: 6vmin;
+    }
+    .central img {
+      object-fit: fill;
+      height: 25vmin;
+      background-color: transparent;
+    }
+    .central p {
+      font-size: 3vmin;
+    }
+    .overlay {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      z-index: +2;
+      margin-left: 0px;
+      font-size: 5vmin;
+     }
+     .overlay ul li{
+      margin: 8vmin;
+      list-style: none;
+    }
+    .whitespace img{
+      position: absolute;
+      left: 6vmin;
+      top: 26vmin;
+      height: 22vmin;
+      width: 90vmin;
+    }
+  }
